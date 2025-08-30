@@ -30,3 +30,36 @@ Contributions to improve these defaults are always welcome! Simply open an issue
 ## ❤️ Thank You
 
 Thank you for being part of the **logchange** community! Together, we can build better tools and foster a collaborative environment. 🎉  
+
+
+---
+
+## 📚 Organization Docs Site
+
+This repository now hosts the Logchange documentation site built with MkDocs (Material theme).
+
+- Live site (after first deploy): https://logchange.github.io/.github/
+- Source docs: ./docs
+- Config: ./mkdocs.yml
+
+### Local preview
+
+```bash
+pip install mkdocs mkdocs-material
+mkdocs serve
+```
+
+### Contributing
+
+- Use the pencil icon on any page to edit directly on GitHub (it links to the file under ./docs).
+- See docs/Contributing: https://logchange.github.io/.github/contributing/
+
+### Structure
+
+- Organization overview: docs/index.md
+- Tools: docs/tools/{logchange|hofund|valhalla}/
+  - getting-started.md, usage.md, faq.md, reference.md
+
+### Deployment
+
+Publishing is automated with GitHub Actions on push to main. The workflow builds MkDocs, uploads the artifact, and deploys to GitHub Pages.

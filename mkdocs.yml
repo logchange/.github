@@ -1,0 +1,71 @@
+site_name: Logchange Docs
+site_description: Documentation for the Logchange organization and tools
+site_url: https://logchange.github.io/.github/
+repo_url: https://github.com/logchange/.github
+# Enables the edit icon pointing to GitHub's web editor for each page
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.path
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - search.highlight
+    - search.suggest
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+nav:
+  - Overview: index.md
+  - Tools:
+      - logchange:
+          - Getting Started: tools/logchange/getting-started.md
+          - Usage: tools/logchange/usage.md
+          - FAQ: tools/logchange/faq.md
+          - Reference: tools/logchange/reference.md
+      - hofund:
+          - Getting Started: tools/hofund/getting-started.md
+          - Usage: tools/hofund/usage.md
+          - FAQ: tools/hofund/faq.md
+          - Reference: tools/hofund/reference.md
+      - valhalla:
+          - Getting Started: tools/valhalla/getting-started.md
+          - Usage: tools/valhalla/usage.md
+          - FAQ: tools/valhalla/faq.md
+          - Reference: tools/valhalla/reference.md
+  - Contributing: contributing.md
+  - About: about.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/logchange
+      name: Logchange on GitHub
+  generator: false

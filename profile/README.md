@@ -39,3 +39,8 @@ We’re here to help! Reach out with ideas, issues, or just to say hi.
 Let’s make software development more efficient together! 🎉
 
 **The logchange Team** ❤️ 
+
+
+---
+
+📚 Organization Docs: https://logchange.github.io/.github/
